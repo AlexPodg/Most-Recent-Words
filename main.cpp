@@ -40,8 +40,8 @@ int main(int argc, char *argv[])
             // Can't use iterators because vector is modified inside the cycle
             for (int i = 0; i<aFoundWords.size() && notfound; i++)
             {
-                string Tempstring(aFoundWords[i].first);
-                if (Tempstring == sWord){
+                string sFoundWord(aFoundWords[i].first);
+                if (sFoundWord == sWord){
                     (aFoundWords[i].second)++;
                     notfound = false;
                 }

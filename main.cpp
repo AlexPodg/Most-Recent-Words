@@ -31,6 +31,7 @@ int main(int argc, char *argv[])
         string sWord (sPhrase.substr(prevpos, pos-prevpos));
         prevpos = pos+1;
         aFoundWords.push_back(StringPair(sWord, 1));
+        //Do while not end of the string.
         do {
             pos = sPhrase.find_first_of(Delimiters, prevpos);
             sWord.clear();
